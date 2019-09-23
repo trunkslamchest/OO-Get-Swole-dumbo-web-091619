@@ -23,7 +23,9 @@ class Gym
 
   def get_lift_total
     sum = 0
+
     total = get_lifters.map { |lifter| sum += lifter.lift_total }
+
     sum
   end
 
